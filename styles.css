@@ -1,8 +1,99 @@
-h1, h2 {
-    margin-bottom: 20px;
-    
+h1.display-4 {
+    color: white !important;
 }
 
-body {
-    background-color: #f8f9fa;
+h2 {
+    margin-bottom: 20px;
+    color: white;
 }
+
+p {
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+.mt-4 {
+    color: white;
+}
+
+body, .navbar {
+    background-color: #2A2950; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar {
+    background-color: #2A2950 !important; 
+}
+
+.btn {
+    background-color: #2A2950;
+    color: white; 
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background-color: #2A2950; 
+    border-color: white;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar .btn {
+    border: none; 
+}
+
+.modal-content {
+    background-color: #2A2950; 
+    color: white; 
+}
+
+.modal-content .btn {
+    background-color: #2A2950; 
+    border: 1px solid white; 
+    color: white;
+}
+
+.modal-content .btn:hover {
+    background-color: #2A2950; 
+    border-color: white;
+    color: white;
+}
+
+.modal-content .form-control {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 300px; 
+    margin: auto; 
+    padding: 15px; 
+}
+
+.card-image {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    height: auto; /* Keeps the image's aspect ratio */
+}
+
+.profile-section {
+    margin-top: 20px;
+}
+.profile-section h2 {
+    margin-top: 15px;
+}
+
+
