@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - iBid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">iBid</a>
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="logoutButton">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Avatar</h3>
+            <img id="userAvatar" src="default_avatar.jpg" alt="Profile Avatar" class="img-fluid mb-3">
+            
+            <form id="updateAvatarForm">
+                <div class="mb-3">
+                    <label for="avatarUrl" class="form-label">Avatar URL</label>
+                    <input type="text" class="form-control" id="avatarUrl" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Update Avatar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3>Profile Information</h3>
+            <p id="userCredits">Credits: Loading...</p>
+        </div>
+    </div>
+</div>
+<script src="/js/profile.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

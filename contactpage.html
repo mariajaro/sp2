@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <script type="module" src="/js/index.js"></script>
+    <title>Auction Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,22 +14,23 @@
         <a class="navbar-brand" href="index.html">iBid</a>
         <div class="navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<br>
+<br>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2>Contact Information</h2>
+            <h2>About us - iBid</h2>
             <p>
-                Feel free to reach out to us for any inquiries or assistance.
+              Welcome to iBid, the innovative online auction platform where every bid promises excitement and opportunity. At iBid, we believe in creating a dynamic and engaging marketplace for buyers and sellers across the globe. Our journey began with a vision to revolutionize the auction process, making it more accessible, transparent, and thrilling for everyone. Our team comprises passionate professionals dedicated to providing a seamless and enjoyable online bidding experience. Our platform is designed to cater to a wide array of interests, ensuring that whether you're a collector, a bargain hunter, or just looking for something unique, iBid is your go-to auction destination. Join us in the adventure of discovering hidden treasures and exclusive deals, only at iBid.
             </p>
             <p>
-                Email: info@example.com<br>
+              Do you have any questions? Contact us here:
+              <br>Email: post@ibid.com<br>
                 Phone: +1 (123) 456-7890
             </p>
         </div>
@@ -52,8 +54,64 @@
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="mb-3">
+              <label for="registerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="registerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="registerEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="registerButton">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="loginButton">Log in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 

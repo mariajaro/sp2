@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">iBid</a>
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <img id="itemImage" src="default_image.jpg" alt="Item Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h2 id="itemTitle">Item Title</h2>
+            <p id="itemDescription">Item Description</p>
+            <h4>Bids</h4>
+            <ul id="bidsList" class="list-unstyled">
+            </ul>
+            <h3>Place Your Bid</h3>
+            <form id="addBidForm">
+                <div class="mb-3">
+                    <input type="number" id="bidAmount" class="form-control" placeholder="Enter bid amount" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Bid</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="module" src="/js/singleListing.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
